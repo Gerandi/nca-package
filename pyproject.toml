@@ -1,5 +1,5 @@
 [project]
-name = "nca"
+name = "ncapackage"
 version = "1.0.0"
 description = "Necessary Condition Analysis (NCA) - Python implementation for identifying necessary conditions in datasets"
 readme = "README.md"

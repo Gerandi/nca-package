@@ -1,7 +1,7 @@
 # NCA - Necessary Condition Analysis
 
-[![PyPI version](https://badge.fury.io/py/nca.svg)](https://badge.fury.io/py/nca)
-[![Python Versions](https://img.shields.io/pypi/pyversions/nca.svg)](https://pypi.org/project/nca/)
+[![PyPI version](https://badge.fury.io/py/ncapackage.svg)](https://badge.fury.io/py/ncapackage)
+[![Python Versions](https://img.shields.io/pypi/pyversions/ncapackage.svg)](https://pypi.org/project/ncapackage/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A Python implementation of Necessary Condition Analysis (NCA), a methodology for identifying necessary conditions in datasets.
@@ -18,7 +18,7 @@ This package is a complete Python port of the [NCA R package](https://cran.r-pro
 ## Installation
 
 ```bash
-pip install nca
+pip install ncapackage
 ```
 
 ## Quick Start
@@ -112,7 +112,7 @@ If you use this package, please cite:
   title={NCA: Necessary Condition Analysis for Python},
   author={Matraku, Gerandi},
   year={2025},
-  url={https://github.com/Gerandi/nca},
+  url={https://github.com/Gerandi/nca-package},
   note={Python implementation of NCA}
 }
 ```
