@@ -199,7 +199,7 @@ def nca_analysis(
         # Add P-value/accuracy for displaying in summary
         for ceiling in ceilings:
             if x_name in tests and ceiling in tests[x_name]:
-                analyses[ceiling]["p"] = tests[x_name][ceiling]["p"]
+                analyses[ceiling]["p"] = tests[x_name][ceiling]["p_value"]
                 analyses[ceiling]["p_accuracy"] = tests[x_name][ceiling]["test_params"][
                     "p_accuracy"
                 ]

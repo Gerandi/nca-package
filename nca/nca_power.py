@@ -90,17 +90,17 @@ def nca_power(
                                     distribution_y=distr_y,
                                 )
 
-                                # nca_analysis(df, 1, 2, ...) in R.
-                                # In Python, use 0 and 1 for indices.
-                                # scope=c(0, 1, 0, 1)
+                                # Get column names from the generated data
+                                x_col = df.columns[0]  # First column is X
+                                y_col = df.columns[-1]  # Last column is Y
+                                
                                 model = nca_analysis(
-                                    df, 0, 1, ceilings=[ceil], test_rep=test_rep, scope=[0, 1, 0, 1]
+                                    df, x_col, y_col, ceilings=[ceil], test_rep=test_rep, scope=[0, 1, 0, 1]
                                 )
 
                                 # Estimated p-value
                                 # model['summaries']['X']['params'][6] (R 1-based) -> index 5 (Python 0-based)
-                                # Assuming 'X' is the name of the first column.
-                                x_name = df.columns[0]
+                                x_name = x_col
 
                                 try:
                                     # We need to ensure we access the correct value.
