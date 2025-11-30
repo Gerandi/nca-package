@@ -53,4 +53,4 @@ jobs:
           pip install ruff
 
       - name: Run Ruff
-        run: ruff check nca/
+        run: ruff check nca/ --select=E,F,W --ignore=E501

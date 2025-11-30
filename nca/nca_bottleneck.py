@@ -263,12 +263,14 @@ def p_display_table_screen_tab(bn, method, title):
 
     # needed <- tabs - floor((offset + nchar(names[1])) / tab)
     needed = tabs - math.floor((offset + len(str(names[0]))) / tab)
-    print(f"{fmt.format('Y')}{names[0]}{'\t' * needed}({bn_y})")
+    tab_str = '\t' * needed
+    print(f"{fmt.format('Y')}{names[0]}{tab_str}({bn_y})")
 
     for i in range(x_length):
         # needed <- tabs - floor((offset + nchar(names[i + 1])) / tab)
         needed = tabs - math.floor((offset + len(str(names[i + 1]))) / tab)
-        print(f"{fmt.format(str(i+1))}{names[i+1]}{'\t' * needed}({bn_x})")
+        tab_str = '\t' * needed
+        print(f"{fmt.format(str(i+1))}{names[i+1]}{tab_str}({bn_x})")
 
     print("----------------------------------------", end="")
     print("----------------------------------------")
@@ -289,17 +291,20 @@ def p_display_table_screen_tab(bn, method, title):
     first = math.ceil(max_col_len / tab)
 
     output = ["Y", "\t" * first]
-    output.append("".join([f"{c}{'\t' * tabs}" for c in tmp.columns]) + "\n")
+    tab_str = '\t' * tabs
+    output.append("".join([f"{c}{tab_str}" for c in tmp.columns]) + "\n")
 
     for idx_row in range(len(tmp)):
         row_label = tmp.index[idx_row]
         needed = first - math.floor(len(str(row_label)) / tab)
-        output.append(f"{row_label}{'\t' * needed}")
+        tab_str = '\t' * needed
+        output.append(f"{row_label}{tab_str}")
 
         for idx_col in range(len(tmp.columns)):
             val = str(tmp.iloc[idx_row, idx_col])
             needed = tabs - math.floor(len(val) / tab)
-            output.append(f"{val}{'\t' * needed}")
+            tab_str = '\t' * needed
+            output.append(f"{val}{tab_str}")
 
         output.append("\n")
 
