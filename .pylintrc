@@ -1,0 +1,31 @@
+[MASTER]
+ignore=NCA
+
+[MESSAGES CONTROL]
+# Disable warnings that can't be fixed due to R port structure
+disable=
+    R0401,  # cyclic-import (unavoidable from R port structure)
+    R0917,  # too-many-positional-arguments (R API compatibility)
+    C0415,  # import-outside-toplevel (circular import workaround)
+    R1702,  # too-many-nested-blocks (complex R algorithm ports)
+    R0914,  # too-many-locals (complex R functions)
+    R0912,  # too-many-branches (complex R functions)
+    R0915,  # too-many-statements (complex R functions)
+    R0913,  # too-many-arguments (R API compatibility)
+    R0911,  # too-many-return-statements (R logic)
+    C0114,  # missing-module-docstring (ported code)
+    C0116,  # missing-function-docstring (ported code)
+    W0718,  # broad-exception-caught (intentional for robustness)
+    W0603,  # global-statement (needed for module state)
+    W0602,  # global-variable-not-assigned (false positive)
+    R0801,  # duplicate-code (similar R port patterns)
+
+[FORMAT]
+max-line-length=120
+
+[BASIC]
+good-names=i,j,k,x,y,n,df,ax,fig,X,Y,A,K
+
+[DESIGN]
+max-args=20
+max-locals=50
