@@ -89,3 +89,6 @@ Thumbs.db
 # Backup files
 *.bak
 *.zip
+
+# Generated output files
+*.pdf

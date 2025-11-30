@@ -3,7 +3,7 @@ name = "nca"
 version = "1.0.0"
 description = "Necessary Condition Analysis (NCA) - Python implementation for identifying necessary conditions in datasets"
 readme = "README.md"
-license = "GPL-3.0"
+license = "GPL-3.0-only"
 requires-python = ">=3.9"
 authors = [
     {name = "Gerandi Matraku", email = "gerandi.matraku@phdtools.com"},
@@ -24,7 +24,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
