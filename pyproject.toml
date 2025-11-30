@@ -24,6 +24,7 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
@@ -65,10 +66,10 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Gerandi/nca"
-Documentation = "https://github.com/Gerandi/nca#readme"
-Repository = "https://github.com/Gerandi/nca"
-Issues = "https://github.com/Gerandi/nca/issues"
+Homepage = "https://github.com/Gerandi/nca-package"
+Documentation = "https://github.com/Gerandi/nca-package#readme"
+Repository = "https://github.com/Gerandi/nca-package"
+Issues = "https://github.com/Gerandi/nca-package/issues"
 "Original R Package" = "https://www.erim.nl/nca"
 
 [build-system]
