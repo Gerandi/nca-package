@@ -32,7 +32,7 @@ LINE_COLORS = {
     "c_lp": "blue",
     "cols": "darkgreen",
     "qr": "lightpink",
-    "ce_vrs": "orchid4",
+    "ce_vrs": "#8B4789",  # orchid4 equivalent
     "cr_vrs": "violet",
     "ce_fdh": "red",
     "cr_fdh": "orange",
