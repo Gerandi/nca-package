@@ -18,7 +18,7 @@ def p_display_bottleneck(bottlenecks, title="Bottleneck", pdf=False, path=None):
         first_method = list(bottlenecks.keys())[0]
         first_bn = bottlenecks[first_method]
         # Assuming first_bn is a DataFrame
-        first_col_name = first_bn.columns[0]
+        first_col_name = str(first_bn.columns[0])  # Convert to string for filename
 
         p_new_pdf("bottlenecks", first_col_name, path, paper="A4r")
 
