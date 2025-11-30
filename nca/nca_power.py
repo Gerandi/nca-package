@@ -93,7 +93,7 @@ def nca_power(
                                 # Get column names from the generated data
                                 x_col = df.columns[0]  # First column is X
                                 y_col = df.columns[-1]  # Last column is Y
-                                
+
                                 model = nca_analysis(
                                     df, x_col, y_col, ceilings=[ceil], test_rep=test_rep, scope=[0, 1, 0, 1]
                                 )
