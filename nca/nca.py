@@ -151,7 +151,7 @@ def nca_analysis(
         loop_data = p_create_loop_data(data_x, data_y, scope, flip_x, flip_y, id_x, qr_tau)
         loop_data["conf"] = test_p_confidence
         p_warn_percentage_max(loop_data, bn_data)
-        x_name = loop_data["names"][id_x]
+        x_name = loop_data["names"][0]  # Index 0 is always the X variable name
 
         # We need this for the 'FIT' number, regardless of user preference
         analisys_ce_fdh = p_nca_wrapper("ce_fdh", loop_data, bn_data, effect_aggregation)

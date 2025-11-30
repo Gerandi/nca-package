@@ -28,7 +28,7 @@ def p_bottleneck(loop_data, bn_data, slope, intercept):
     mpx = p_transform_mpx(loop_data, mpx, bn_data["bn_x_id"])
     pretty_mpx = p_pretty_mpx(loop_data, mpx, nn_value, na_value, precision_x)
 
-    df = pd.DataFrame(pretty_mpx, columns=[loop_data["names"][loop_data["idx"]]])
+    df = pd.DataFrame(pretty_mpx, columns=[loop_data["names"][0]])  # Index 0 is current X
     df.attrs["mpx_actual"] = mpx_actual
 
     if bn_data["bn_x_id"] == 4:
@@ -64,7 +64,7 @@ def p_bottleneck_ce(loop_data, bn_data, peers, type_):
     mpx = p_transform_mpx(loop_data, mpx, bn_data["bn_x_id"])
     pretty_mpx = p_pretty_mpx(loop_data, mpx, nn_value, na_value, precision_x)
 
-    df = pd.DataFrame(pretty_mpx, columns=[loop_data["names"][loop_data["idx"]]])
+    df = pd.DataFrame(pretty_mpx, columns=[loop_data["names"][0]])  # Index 0 is current X
     df.attrs["mpx_actual"] = mpx_actual
 
     if bn_data["bn_x_id"] == 4:
